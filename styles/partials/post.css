@@ -1,0 +1,150 @@
+.post {
+  text-align: left;
+  margin: 0 0 space-normal;
+}
+.post__title,
+.post__subtitle,
+.post__reference {
+  font-family: title-font;
+  line-height: 1.5;
+}
+.post__title {
+  font-size: font-title;
+}
+.post__subtitle {
+  font-size: font-largest;
+  margin-bottom: space-base;
+}
+.post__reference {
+  font-size: font-large;
+}
+.post__reference a {
+  color: font-color-light;
+}
+.post__reference a:hover,
+.post__reference a:active {
+  text-decoration: underline;
+}
+.post__meta {
+  display: flex;
+  flex-wrap: wrap;
+  font: font-normal/2.5 aside-font-en;
+  margin-bottom: space-normal;
+}
+.post__date {
+  margin-right: space-large;
+  letter-spacing: 1px;
+}
+.post__category,
+.post__tag,
+.post__stat {
+  margin-right: space-large;
+}
+.post__category .category-link,
+.post__tag .tag-link {
+  letter-spacing: 2px;
+}
+.post__category .category-link:hover,
+.post__tag .tag-link:hover {
+  cursor: pointer;
+  color: font-color-light;
+}
+.post__stat .leancloud-visitors-count {
+  letter-spacing: 2px;
+}
+.post__aside {
+  position: fixed;
+  top: 62px;
+  right: space-normal;
+  max-width: 20rem;
+}
+.post__actions {
+  margin-bottom: space-small;
+}
+.post__share,
+.post__top {
+  color: font-color-light;
+  margin-right: space-small;
+}
+.post__share:hover,
+.post__top:hover {
+  color: font-color-normal;
+}
+.post__share .blogfont,
+.post__top .blogfont {
+  font-size: font-normal;
+  margin-right: 2px;
+}
+.post__toc-text {
+  color: font-color-light;
+  font: font-smaller/1.75 aside-font-en;
+  transition: color 0.2s;
+}
+.post__toc-text:hover {
+  color: font-color-dark;
+}
+.post__toc-level-2::before {
+  content: '·';
+  margin-right: space-small;
+}
+.post__toc-level-3 {
+  text-indent: 1em;
+}
+.post__content {
+  font: font-normal/2 text-font;
+}
+.post__content h2 {
+  margin-bottom: space-base;
+}
+.post__content code {
+  font-family: text-font-en;
+}
+.post__content figure {
+  border: border-width dotted border-color;
+  border-left: 2px solid border-color;
+  border-radius: border-radius;
+  padding: space-base space-normal;
+  margin-bottom: space-base;
+  overflow: auto;
+}
+.post__content pre,
+.post__content .gutter {
+  font: font-normal/2 code-font;
+  letter-spacing: 1px;
+}
+.post__content pre {
+  padding-right: space-normal;
+}
+.post__content .gutter {
+  width: 20px;
+}
+.post__content p {
+  margin-bottom: space-normal;
+  color: font-color-normal;
+}
+.post__content p a {
+  text-decoration: underline;
+}
+@media screen and (max-width: 1200px) {
+  .post__title,
+  .post__subtitle,
+  .post__reference {
+    line-height: 1.5;
+  }
+  .post__title {
+    font-size: font-larger;
+  }
+  .post__subtitle {
+    font-size: 1.8rem;
+  }
+  .post__reference {
+    font-size: font-normal;
+  }
+  .post__meta {
+    font-size: font-smallest;
+    line-height: 1.75;
+  }
+  .post__aside {
+    display: none;
+  }
+}

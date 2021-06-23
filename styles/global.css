@@ -1,0 +1,477 @@
+@font-face {
+  font-family: 'Blogfont'; /* project id 1842100 */
+  src: url("//at.alicdn.com/t/font_1842100_he8ga4uxvyo.eot");
+  src: url("//at.alicdn.com/t/font_1842100_he8ga4uxvyo.eot?#iefix") format('embedded-opentype'), url("//at.alicdn.com/t/font_1842100_he8ga4uxvyo.woff2") format('woff2'), url("//at.alicdn.com/t/font_1842100_he8ga4uxvyo.woff") format('woff'), url("//at.alicdn.com/t/font_1842100_he8ga4uxvyo.ttf") format('truetype'), url("//at.alicdn.com/t/font_1842100_he8ga4uxvyo.svg#Blogfont") format('svg');
+}
+.blogfont {
+  font-family: "Blogfont" !important;
+  font-size: 1.5rem;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  word-break: break-word;
+}
+a {
+  font-size: inherit;
+  transition: color 0.2s;
+}
+a,
+alink,
+ahover,
+aactive,
+avisited {
+  color: #000;
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+}
+ul,
+li {
+  list-style: none;
+}
+html {
+  font-size: 10px;
+}
+body {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  overflow-x: hidden;
+}
+/*定义滚动条宽高及背景，宽高分别对应横竖滚动条的尺寸*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  background-color: #fff;
+}
+/*定义滚动条的轨道，内阴影及圆角*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.1);
+  border-radius: 3px;
+  background-color: #f9f9f9;
+}
+/*定义滑块，内阴影及圆角*/
+::-webkit-scrollbar-thumb {
+  border-radius: 3px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.3);
+  background-color: #ccc;
+}
+@-moz-keyframes slideUp {
+  from {
+    opacity: 1;
+    height: auto;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+@-webkit-keyframes slideUp {
+  from {
+    opacity: 1;
+    height: auto;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+@-o-keyframes slideUp {
+  from {
+    opacity: 1;
+    height: auto;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+@keyframes slideUp {
+  from {
+    opacity: 1;
+    height: auto;
+  }
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
+@-moz-keyframes slideDown {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: auto;
+  }
+}
+@-webkit-keyframes slideDown {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: auto;
+  }
+}
+@-o-keyframes slideDown {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: auto;
+  }
+}
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    height: 0;
+  }
+  to {
+    opacity: 1;
+    height: auto;
+  }
+}
+#header {
+  width: 100%;
+  padding: 2rem;
+  text-align: center;
+}
+#header .menu {
+  line-height: 1;
+}
+#header .menu--right {
+  float: right;
+}
+#header .menu--right .menu__item {
+  font-size: 1.2rem;
+  margin: 0 1rem;
+}
+#header .menu__item {
+  font: 2rem/1 'Microsoft JhengHei UI Light';
+  color: #000;
+  margin: 0 2rem;
+}
+#header .menu__item:hover {
+  color: #ccc;
+}
+@media screen and (max-width: 1200px) {
+  #header .menu__item {
+    font-size: 1.8rem;
+  }
+}
+main {
+  width: 56vw;
+  border-bottom: 0.5px solid #ccc;
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  main {
+    width: 80vw;
+  }
+}
+#footer {
+  position: relative;
+  width: 100%;
+  font: 1.3rem/1 'Microsoft JhengHei UI Light';
+  padding: 1.5rem;
+  text-align: center;
+}
+#footer .social-links {
+  display: inline-block;
+  margin: 0 0.5rem;
+  color: #666;
+}
+.list {
+  width: 40vw;
+  margin: 0 auto;
+  text-align: left;
+}
+.list__title {
+  font: bold 3rem/1 '方正粗黑宋简体';
+  color: #666;
+  margin: 2rem 0;
+  letter-spacing: 3px;
+  cursor: pointer;
+}
+.list__title::first-letter {
+  color: #ccc;
+}
+.list__title.closed + .list__list {
+  animation: slideUp 0.2s forwards;
+}
+.list__count {
+  font: bold 1.5rem/1 'HP Simplified Light';
+  vertical-align: super;
+}
+.list__item {
+  display: flex;
+  align-items: baseline;
+  margin-bottom: 1.5rem;
+  border-bottom: 0.5px dashed #ccc;
+}
+.list__item a {
+  flex: 1;
+  font: 1.5rem/1.5 '方正粗黑宋简体';
+  letter-spacing: 1px;
+}
+.list__item a:hover {
+  text-decoration: underline;
+}
+.list__date {
+  flex-basis: 10rem;
+  font: 1.3rem/1.5 'Microsoft Yahei Light';
+  color: #666;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 720px) {
+  .list {
+    width: 100%;
+  }
+  .list__date {
+    flex-basis: 9rem;
+    letter-spacing: 0;
+  }
+}
+.post {
+  text-align: left;
+  margin: 0 0 1.5rem;
+}
+.post__title,
+.post__subtitle,
+.post__reference {
+  font-family: '方正粗黑宋简体';
+  line-height: 1.5;
+}
+.post__title {
+  font-size: 5rem;
+}
+.post__subtitle {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.post__reference {
+  font-size: 2rem;
+}
+.post__reference a {
+  color: #ccc;
+}
+.post__reference a:hover,
+.post__reference a:active {
+  text-decoration: underline;
+}
+.post__meta {
+  display: flex;
+  flex-wrap: wrap;
+  font: 1.5rem/2.5 'HP Simplified Light';
+  margin-bottom: 1.5rem;
+}
+.post__date {
+  margin-right: 2rem;
+  letter-spacing: 1px;
+}
+.post__category,
+.post__tag,
+.post__stat {
+  margin-right: 2rem;
+}
+.post__category .category-link,
+.post__tag .tag-link {
+  letter-spacing: 2px;
+}
+.post__category .category-link:hover,
+.post__tag .tag-link:hover {
+  cursor: pointer;
+  color: #ccc;
+}
+.post__stat .leancloud-visitors-count {
+  letter-spacing: 2px;
+}
+.post__aside {
+  position: fixed;
+  top: 62px;
+  right: 1.5rem;
+  max-width: 20rem;
+}
+.post__actions {
+  margin-bottom: 0.5rem;
+}
+.post__share,
+.post__top {
+  color: #ccc;
+  margin-right: 0.5rem;
+}
+.post__share:hover,
+.post__top:hover {
+  color: #666;
+}
+.post__share .blogfont,
+.post__top .blogfont {
+  font-size: 1.5rem;
+  margin-right: 2px;
+}
+.post__toc-text {
+  color: #ccc;
+  font: 1.3rem/1.75 'HP Simplified Light';
+  transition: color 0.2s;
+}
+.post__toc-text:hover {
+  color: #000;
+}
+.post__toc-level-2::before {
+  content: '·';
+  margin-right: 0.5rem;
+}
+.post__toc-level-3 {
+  text-indent: 1em;
+}
+.post__content {
+  font: 1.5rem/2 '\5E7C\5706';
+}
+.post__content h2 {
+  margin-bottom: 1rem;
+}
+.post__content code {
+  font-family: 'Microsoft Yahei Light';
+}
+.post__content figure {
+  border: 0.5px dotted #ccc;
+  border-left: 2px solid #ccc;
+  border-radius: 3px;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1rem;
+  overflow: auto;
+}
+.post__content pre,
+.post__content .gutter {
+  font: 1.5rem/2 'Calibri Light';
+  letter-spacing: 1px;
+}
+.post__content pre {
+  padding-right: 1.5rem;
+}
+.post__content .gutter {
+  width: 20px;
+}
+.post__content p {
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+.post__content p a {
+  text-decoration: underline;
+}
+@media screen and (max-width: 1200px) {
+  .post__title,
+  .post__subtitle,
+  .post__reference {
+    line-height: 1.5;
+  }
+  .post__title {
+    font-size: 2.5rem;
+  }
+  .post__subtitle {
+    font-size: 1.8rem;
+  }
+  .post__reference {
+    font-size: 1.5rem;
+  }
+  .post__meta {
+    font-size: 1.2rem;
+    line-height: 1.75;
+  }
+  .post__aside {
+    display: none;
+  }
+}
+.pagination {
+  margin: 2rem;
+}
+.pagination .page-number {
+  font-family: 'Microsoft Yahei Light';
+  margin: 0 1rem;
+}
+.pagination .page-number:hover {
+  text-decoration: underline;
+}
+.block {
+  margin: 2rem 0;
+}
+.block__item {
+  margin-bottom: 3rem;
+}
+.block__title {
+  display: block;
+  color: #000;
+  font: 2.5rem/1.5 '方正粗黑宋简体';
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+.block__title:hover {
+  text-decoration: underline;
+}
+.block__date {
+  font: bold 1.5rem/2.5 '\5b8b\4f53';
+  color: #666;
+  letter-spacing: 2px;
+}
+.block__excerpt {
+  text-align: left;
+  font: 1.4rem/1.75 'Microsoft Yahei Light';
+  letter-spacing: 5px;
+}
+.block__more {
+  display: block;
+  font: bold 1.8rem/1.5 '方正粗黑宋简体';
+  color: #666;
+  margin: 2rem 0;
+  letter-spacing: 2px;
+}
+.block__more:hover {
+  color: #ccc;
+}
+@media screen and (max-width: 720px) {
+  .block__title {
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+}
+.comments {
+  margin-bottom: 3rem;
+}
+.comments .vcount {
+  font-family: 'Microsoft Yahei Light';
+}
+.comments .vinput {
+  font-family: 'Microsoft Yahei Light';
+  transition: all 0.5s;
+}
+.comments .vinput:active,
+.comments .vinput:focus {
+  border-bottom-color: #000 !important;
+}
+.comments .vbtn:active,
+.comments .vbtn:hover {
+  border-color: #000 !important;
+  color: #000 !important;
+}
+.comments .vat {
+  color: #666 !important;
+}
+.comments .vsys,
+.comments .vempty,
+.comments .vpower {
+  display: none !important;
+}

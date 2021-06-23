@@ -1,0 +1,28 @@
+#header {
+  width: 100%;
+  padding: space-large;
+  text-align: center;
+}
+#header .menu {
+  line-height: 1;
+}
+#header .menu--right {
+  float: right;
+}
+#header .menu--right .menu__item {
+  font-size: font-smallest;
+  margin: 0 space-base;
+}
+#header .menu__item {
+  font: font-large/1 header-font;
+  color: font-color-dark;
+  margin: 0 space-large;
+}
+#header .menu__item:hover {
+  color: font-color-light;
+}
+@media screen and (max-width: 1200px) {
+  #header .menu__item {
+    font-size: 1.8rem;
+  }
+}

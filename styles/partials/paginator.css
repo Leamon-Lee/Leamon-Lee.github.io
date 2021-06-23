@@ -1,0 +1,10 @@
+.pagination {
+  margin: space-large;
+}
+.pagination .page-number {
+  font-family: text-font-en;
+  margin: 0 space-base;
+}
+.pagination .page-number:hover {
+  text-decoration: underline;
+}
