@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/Leamon-Cat.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/Leamon-Cat-32.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/Leamon-Cat-16.ico">
+  <link rel="mask-icon" href="/images/Leamon-Cat.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/all.min.css" integrity="sha256-2H3fkXt6FEmrReK448mDVGKb3WW2ZZw35gI7vqHOE4Y=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"leamon-lee.github.io","root":"/","images":"/images","scheme":"Muse","version":"8.6.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+<meta name="description" content="引言&amp;emsp;&amp;emsp;最近在看关于量子力学的书，也是被迫无奈，自从与两久违的朋友开启了“卡在烧杯里的猫”这个有关化学科普的项目，看书变成每日必干的事。当和他们交谈中，提到了电子的自旋这一概念，不禁想研究一下磁铁产生磁力的原因是否和电子的自旋有关，而或者是其他原因。 &amp;emsp;&amp;emsp;真的是遇事不决，量子力学。笑">
+<meta property="og:type" content="article">
+<meta property="og:title" content="磁铁以及磁化等原理">
+<meta property="og:url" content="http://leamon-lee.github.io/2021/07/28/%E7%A3%81%E9%93%81%E4%BB%A5%E5%8F%8A%E7%A3%81%E6%80%A7%E7%9A%84%E5%8E%9F%E7%90%86/index.html">
+<meta property="og:site_name" content="Leamon&#39;s Blog">
+<meta property="og:description" content="引言&amp;emsp;&amp;emsp;最近在看关于量子力学的书，也是被迫无奈，自从与两久违的朋友开启了“卡在烧杯里的猫”这个有关化学科普的项目，看书变成每日必干的事。当和他们交谈中，提到了电子的自旋这一概念，不禁想研究一下磁铁产生磁力的原因是否和电子的自旋有关，而或者是其他原因。 &amp;emsp;&amp;emsp;真的是遇事不决，量子力学。笑">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/008i3skNgy1gsyducn1w9j30u00wan2t.jpg">
+<meta property="og:image" content="https://pica.zhimg.com/6578b2b6782dc45c37c630d6c4b86366_r.jpg">
+<meta property="og:image" content="https://img.scimall.org.cn/collect/2020/04/22/wt_a62322020042121114_2c9057.jpg">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/008i3skNgy1gsyduera5ij30bo04tweo.jpg">
+<meta property="article:published_time" content="2021-07-28T05:16:48.000Z">
+<meta property="article:modified_time" content="2021-08-29T05:47:10.316Z">
+<meta property="article:author" content="Leamon Makoto Lee">
+<meta property="article:tag" content="生活里的阿法波">
+<meta property="article:tag" content="理科">
+<meta property="article:tag" content="电磁">
+<meta property="article:tag" content="量子力学">
+<meta property="article:tag" content="物理">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/008i3skNgy1gsyducn1w9j30u00wan2t.jpg">
+
+
+<link rel="canonical" href="http://leamon-lee.github.io/2021/07/28/%E7%A3%81%E9%93%81%E4%BB%A5%E5%8F%8A%E7%A3%81%E6%80%A7%E7%9A%84%E5%8E%9F%E7%90%86/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://leamon-lee.github.io/2021/07/28/%E7%A3%81%E9%93%81%E4%BB%A5%E5%8F%8A%E7%A3%81%E6%80%A7%E7%9A%84%E5%8E%9F%E7%90%86/","path":"2021/07/28/磁铁以及磁性的原理/","title":"磁铁以及磁化等原理"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>磁铁以及磁化等原理 | Leamon's Blog</title>
+  
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<!-- hexo injector head_end start -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css">
+<!-- hexo injector head_end end --></head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Leamon's Blog</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Hey, there!</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</div>
+        
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%BC%95%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">引言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%A0%B8%E5%A4%96%E7%94%B5%E5%AD%90%E7%9A%84%E5%88%86%E5%B8%83%E4%B8%8E%E5%87%80%E5%89%A9%E8%87%AA%E6%97%8B"><span class="nav-number">2.</span> <span class="nav-text">核外电子的分布与净剩自旋</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A3%81%E6%80%A7%E7%9A%84%E5%88%86%E7%B1%BB"><span class="nav-number">3.</span> <span class="nav-text">磁性的分类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A3%81%E7%95%B4%E7%9A%84%E6%88%90%E5%8E%9F%E5%9B%A0"><span class="nav-number">4.</span> <span class="nav-text">磁畴的成原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%A3%81%E5%8C%96%E7%9A%84%E5%8E%9F%E5%9B%A0"><span class="nav-number">5.</span> <span class="nav-text">磁化的原因</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%BB%93%E5%B0%BE"><span class="nav-number">6.</span> <span class="nav-text">结尾</span></a></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-overview">
+            <div class="site-author site-overview-item animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Leamon Makoto Lee"
+      src="/images/Leamon-Cat-2.svg">
+  <p class="site-author-name" itemprop="name">Leamon Makoto Lee</p>
+  <div class="site-description" itemprop="description">这是我的博客，一个高中生闲得慌建的</div>
+</div>
+<div class="site-state-wrap site-overview-item animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">7</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">21</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <div class="sidebar-dimmer"></div>
+
+
+    </header>
+
+    
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="http://leamon-lee.github.io/2021/07/28/%E7%A3%81%E9%93%81%E4%BB%A5%E5%8F%8A%E7%A3%81%E6%80%A7%E7%9A%84%E5%8E%9F%E7%90%86/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/Leamon-Cat-2.svg">
+      <meta itemprop="name" content="Leamon Makoto Lee">
+      <meta itemprop="description" content="这是我的博客，一个高中生闲得慌建的">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Leamon's Blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          磁铁以及磁化等原理
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2021-07-28 13:16:48" itemprop="dateCreated datePublished" datetime="2021-07-28T13:16:48+08:00">2021-07-28</time>
+    </span>
+      <span class="post-meta-item">
+        <span class="post-meta-item-icon">
+          <i class="far fa-calendar-check"></i>
+        </span>
+        <span class="post-meta-item-text">Edited on</span>
+        <time title="Modified: 2021-08-29 13:47:10" itemprop="dateModified" datetime="2021-08-29T13:47:10+08:00">2021-08-29</time>
+      </span>
+
+  
+    <span class="post-meta-item" title="Views" id="busuanzi_container_page_pv">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">Views: </span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan: </span>
+    
+    
+      <a title="changyan" href="/2021/07/28/%E7%A3%81%E9%93%81%E4%BB%A5%E5%8F%8A%E7%A3%81%E6%80%A7%E7%9A%84%E5%8E%9F%E7%90%86/#SOHUCS" itemprop="discussionUrl">
+        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2021/07/28/磁铁以及磁性的原理/" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h2 id="引言"><a href="#引言" class="headerlink" title="引言"></a>引言</h2><p>&emsp;&emsp;最近在看关于量子力学的书，也是被迫无奈，自从与两久违的朋友开启了“卡在烧杯里的猫”这个有关化学科普的项目，看书变成每日必干的事。当和他们交谈中，提到了电子的自旋这一概念，不禁想研究一下磁铁产生磁力的原因是否和电子的自旋有关，而或者是其他原因。</p>
+<p>&emsp;&emsp;真的是遇事不决，量子力学。笑</p>
+<span id="more"></span>
+<p><strong>其中涉及到的知识内容</strong></p>
+<ul>
+<li>自旋概念</li>
+<li>构造原理(Aufbau principle)</li>
+<li>洪特法则(Hund’s rules)</li>
+<li>泡利不相容原理(Pauli exclusion principle)</li>
+<li>磁性分类</li>
+<li>磁畴</li>
+</ul>
+<h2 id="核外电子的分布与净剩自旋"><a href="#核外电子的分布与净剩自旋" class="headerlink" title="核外电子的分布与净剩自旋"></a>核外电子的分布与净剩自旋</h2><p>&emsp;&emsp;物质在微观原子层面上来看，原子是由原子核和核外电子构成的。而原子核的自转而使带正电荷的质子移动，电子绕原子核转以及电子的自转，都可产生电流，从而分别产生核子磁矩，轨域磁矩和内禀磁矩（内旋磁矩）。</p>
+<p>&emsp;&emsp;而原子核比电子重2000倍左右，其运动速度仅为电子速度的几千分之一，所以质子的磁力比电子的磁力要弱1000倍左右，因此原子核的磁力对原子整体的磁力几乎没有影响，可以忽略不计。又由于遵循三个定理，构造原理(Aufbau principle)，洪特法则(Hund’s rules)和泡利不相容原理(Pauli exclusion principle)。所以形成一种机制，匹配成对的两个电子的内禀磁矩方向相反且电子趋向于填满次层，达成净轨域运动为零。（选修二化学的基态原子的核外电子排布规律）<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/zh-cn/%E7%A3%81">[1]</a> <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%A3%81%E6%80%A7/2546649?fr=aladdin">[2]</a></p>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsyducn1w9j30u00wan2t.jpg" width="80%" height="80%"></p>
+<p><strong>如上图表</strong><a target="_blank" rel="noopener" href="https://www.zhihu.com/question/38879132">[3]</a></p>
+<ol>
+<li>惰性气体（ⅧA）的核外电子都恰好是全部成对的，因此不可能有净剩自旋</li>
+<li>主族元素（ⅠA～ⅫA）虽然都有未配对电子，但在形成化合物时，这些电子一般都会成为价电子参与配对成键，因而也大都不具备明显的磁性</li>
+<li>只有过渡族元素具有非价电子的净剩自旋，因而也就是不同材料中磁性的主要承载者</li>
+</ol>
+<p>&emsp;&emsp;但是不是所有拥有净剩自旋的电子的粒子构成的物质就现磁性。</p>
+<p>&emsp;&emsp;比如：Cr [Ar]4s1 3d5</p>
+<p>&emsp;&emsp;铬有六个可净剩自旋的电子，但整体纯净铬单质不显磁性，这就是下面要讨论的磁性的分类。</p>
+<h2 id="磁性的分类"><a href="#磁性的分类" class="headerlink" title="磁性的分类"></a>磁性的分类</h2><p><img src="https://pica.zhimg.com/6578b2b6782dc45c37c630d6c4b86366_r.jpg" alt=""></p>
+<p>&emsp;&emsp;上图所示，磁铁的磁性可被分为五个主要类型，分别为顺磁性(Paramagnets)，抗磁性（反磁性）(Diamagnets)，铁磁性(Ferromagnets)，反铁磁性(Antiferromagnets)，亚铁磁性(Ferrimagnets)。</p>
+<p><strong>在显示磁性时，</strong></p>
+<ul>
+<li>顺磁性物质，亚铁磁性物质和铁磁性物质会被磁力强的区域吸引；</li>
+<li>抗磁性物质则会被磁力弱的区域吸引；</li>
+<li>反铁磁性物质不受磁场影响；</li>
+<li>还有些与磁场的关系更复杂。<a target="_blank" rel="noopener" href="https://zh.m.wikipedia.org/zh-cn/%E7%A3%81">[1]</a> </li>
+</ul>
+<p>&emsp;&emsp;铬单质就是一种反铁磁性，即遇外界磁力场也无动于衷，不显磁性。</p>
+<h2 id="磁畴的成原因"><a href="#磁畴的成原因" class="headerlink" title="磁畴的成原因"></a>磁畴的成原因</h2><p>&emsp;&emsp;在铁磁性物质内部，单个原子就好比一个单个小磁铁，而临近其原子且磁力矩的方向均平行，则这一块由同磁力矩组成的原子部分称为一个磁畴(megnetic domain)，可用磁力显微镜观察到磁畴。<br><img src="https://img.scimall.org.cn/collect/2020/04/22/wt_a62322020042121114_2c9057.jpg" alt=""></p>
+<h2 id="磁化的原因"><a href="#磁化的原因" class="headerlink" title="磁化的原因"></a>磁化的原因</h2><p>&emsp;&emsp;如下图(a)，每一个小单元就是一个磁畴。整体上来看整个磁铁上每一个磁畴的方向不一致，而且这些“小磁铁”的“磁力”矢量之和为0，所以整个磁铁不显磁性。<a target="_blank" rel="noopener" href="https://zhidao.baidu.com/question/1509853850156308420.html">[4]</a> <a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E7%A3%81%E7%95%B4/5458479?fr=aladdin">[5]</a></p>
+<p>&emsp;&emsp;如下图(b)所示，当外届有强磁力H时，每个磁畴就如同军队中，排长一声口令，各个队员齐刷刷地从无序到有序排列整齐，方向与H一致。</p>
+<p><img src="https://tva1.sinaimg.cn/large/008i3skNgy1gsyduera5ij30bo04tweo.jpg" width="80%" height="80%"></p>
+<h2 id="结尾"><a href="#结尾" class="headerlink" title="结尾"></a>结尾</h2><p>&emsp;&emsp;2300年前，中国人利用磁石发明了司南，很可惜磁石的研究是20世纪才开始的。可笑的是，当一个小孩拿着一节磁石，撒着鼻涕，捧着在面前，问磁石产生磁性的原因时，大人也不会去深究一下，只会觉得小孩的问题过于荒诞，而一笑了之。</p>
+<p>&emsp;&emsp;小小作文，不容易，有错勿喷，偷偷在下面告诉我，满满的求生欲。笑</p>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          
+
+<div class="post-copyright">
+<ul>
+  <li class="post-copyright-author">
+      <strong>Post author:  </strong>Leamon Makoto Lee
+  </li>
+  <li class="post-copyright-link">
+      <strong>Post link: </strong>
+      <a href="http://leamon-lee.github.io/2021/07/28/%E7%A3%81%E9%93%81%E4%BB%A5%E5%8F%8A%E7%A3%81%E6%80%A7%E7%9A%84%E5%8E%9F%E7%90%86/" title="磁铁以及磁化等原理">http://leamon-lee.github.io/2021/07/28/磁铁以及磁性的原理/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>Copyright Notice:  </strong>All articles in this blog are licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> unless stating additionally.
+  </li>
+</ul>
+</div>
+
+          <div class="post-tags">
+              <a href="/tags/%E7%94%9F%E6%B4%BB%E9%87%8C%E7%9A%84%E9%98%BF%E6%B3%95%E6%B3%A2/" rel="tag"># 生活里的阿法波</a>
+              <a href="/tags/%E7%90%86%E7%A7%91/" rel="tag"># 理科</a>
+              <a href="/tags/%E7%94%B5%E7%A3%81/" rel="tag"># 电磁</a>
+              <a href="/tags/%E9%87%8F%E5%AD%90%E5%8A%9B%E5%AD%A6/" rel="tag"># 量子力学</a>
+              <a href="/tags/%E7%89%A9%E7%90%86/" rel="tag"># 物理</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/07/10/%E8%80%83%E8%AF%95%E8%84%91%E7%A7%91%E5%AD%A6/" rel="prev" title="《考试脑科学》的那些玲珑的小橘子">
+                  <i class="fa fa-chevron-left"></i> 《考试脑科学》的那些玲珑的小橘子
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2021/08/08/%E7%89%A7%E5%B8%88%E4%B8%8E%E7%89%A7%E7%BE%8A%E4%BA%BA/" rel="next" title="牧师与牧羊人">
+                  牧师与牧羊人 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+    <div class="comments" id="SOHUCS"></div>
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Leamon Makoto Lee</span>
+</div>
+<div class="busuanzi-count">
+    <span class="post-meta-item" id="busuanzi_container_site_uv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-user"></i>
+      </span>
+      <span class="site-uv" title="Total Visitors">
+        <span id="busuanzi_value_site_uv"></span>
+      </span>
+    </span>
+    <span class="post-meta-item" id="busuanzi_container_site_pv">
+      <span class="post-meta-item-icon">
+        <i class="fa fa-eye"></i>
+      </span>
+      <span class="site-pv" title="Total Views">
+        <span id="busuanzi_value_site_pv"></span>
+      </span>
+    </span>
+</div>
+
+    </div>
+  </footer>
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+  
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+
+
+
+  
+
+  <script class="next-config" data-name="enableMath" type="application/json">true</script><script class="next-config" data-name="mathjax" type="application/json">{"enable":true,"tags":"none","js":{"url":"https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js","integrity":"sha256-r+3itOMtGGjap0x+10hu6jW/gZCzxHsoKrOd7gyRSGY="}}</script>
+<script src="/js/third-party/math/mathjax.js"></script>
+
+
+<script class="next-config" data-name="changyan" type="application/json">{"enable":true,"appid":"cyvA6gn3b","appkey":"d3f105b95ed648c570c35ca744b8c8a7"}</script>
+<script src="/js/third-party/comments/changyan.js"></script>
+
+</body>
+</html>
